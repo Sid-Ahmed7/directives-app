@@ -1,0 +1,4 @@
+<p [ngStyle]="{color: isAdmin ? 'red' :'black'}">{{title}}</p>
+<button type="button" >View</button>
+<button type="button" *ngIf="isAdmin" >Edit</button>
+<button type="button" (click)="toogleisAdmin()">Change the value of isAdmin</button>
